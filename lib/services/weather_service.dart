@@ -14,7 +14,7 @@ class WeatherService {
   // Allow injecting an http.Client for testing
   WeatherService({http.Client? client}) : httpClient = client ?? http.Client();
 
-  Future<Position?>getCurrentLocation() async {
+  Future<Position?> getCurrentLocation() async {
     bool serviceEnabled;
     LocationPermission permission;
 
